@@ -30,7 +30,7 @@ function speak ()
 }
 function check()
 {
- img = document.getElementById('captured_image ');
+ img = document.getElementById('captured_image');
  classifier.classify(img,gotResult);
 }
 function gotResult(error,results)
@@ -67,19 +67,19 @@ if(results[0].label == "THINKING")
 
 if(results[1].label == "HAPPY")
 {
-  document.getElementById("update_emoji").innerHTML="&#128522;";
+  document.getElementById("update_emoji2").innerHTML="&#128522;";
 }
 if(results[1].label == "SAD")
 {
-  document.getElementById("update_emoji").innerHTML="&#128532;";
+  document.getElementById("update_emoji2").innerHTML="&#128532;";
 }
 if(results[1].label == "ANGRY")
 {
-  document.getElementById("update_emoji").innerHTML="&#128548;";
+  document.getElementById("update_emoji2").innerHTML="&#128548;";
 }
 if(results[1].label == "THINKING")
 {
-  document.getElementById("update_emoji").innerHTML="&#128580;";
+  document.getElementById("update_emoji2").innerHTML="&#128580;";
 }
 }
 }
