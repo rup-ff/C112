@@ -44,7 +44,7 @@ if(error)
   document.getElementById("result_emotion_name").innerHTML = results[0].label;
   document.getElementById("result_emotion_name2").innerHTML = results[1].label;
 prediction_1 = results[0].label;
-prediction_2 = rsluts[1].label;
+prediction_2 = resluts[1].label;
 speak();
 if(results[0].label == "HAPPY")
 {
